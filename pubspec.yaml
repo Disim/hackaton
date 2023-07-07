@@ -1,0 +1,27 @@
+name: hackaton
+description: A new Flutter project.
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localization: ^0.1.12
+  provider: ^6.0.5
+  cupertino_icons: ^1.0.2
+  hive_flutter: ^1.1.0
+  dio: ^5.2.1+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - images/
