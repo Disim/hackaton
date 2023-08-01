@@ -173,7 +173,7 @@ class _ViewPageState extends State<ViewPage> {
                           children: [
                             ClassicButton(AppLocalizations.of(context)!.enable,
                                 () async {
-                              final response = await dio
+                              await dio
                                   .post(
                                       'https://api-uae-test.ujin.tech/api/apartment/send-signal/?token=ust-738989-e96c48339a4a4ded2cd43abdee8c0392&serialnumber=636686744&signal=lamp_a1&state=1')
                                   .onError((error, stackTrace) =>
@@ -185,7 +185,7 @@ class _ViewPageState extends State<ViewPage> {
                             SizedBox(width: margin),
                             ClassicButton(AppLocalizations.of(context)!.disable,
                                 () async {
-                              final response = await dio
+                              await dio
                                   .post(
                                       'https://api-uae-test.ujin.tech/api/apartment/send-signal/?token=ust-738989-e96c48339a4a4ded2cd43abdee8c0392&serialnumber=636686744&signal=lamp_a1&state=0')
                                   .onError((error, stackTrace) =>
